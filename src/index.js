@@ -12,9 +12,25 @@ module.exports = (function () {
 			throw error;
 		}
 
-		httpClient.route('timeout', function (error, event) {
+		// httpClient.route('timeout', function (error, event) {
+		// 	console.log(new Array(81).join('-'));
+		// 	console.log('ERROR=', error);
+		// 	console.log('EVENT=', event);
+		// 	console.log(new Array(81).join('-'));
+		// });
+
+		// httpClient.route('unknown-domain', function (error, event) {
+		// 	console.log(new Array(81).join('-'));
+		// 	console.log('ERROR=', error);
+		// 	console.log('EVENT=', event);
+		// 	console.log(new Array(81).join('-'));
+		// });
+
+		httpClient.route('no-connection', function (error, event) {
+			console.log(new Array(81).join('-'));
 			console.log('ERROR=', error);
 			console.log('EVENT=', event);
+			console.log(new Array(81).join('-'));
 		});
 	});
 })();
