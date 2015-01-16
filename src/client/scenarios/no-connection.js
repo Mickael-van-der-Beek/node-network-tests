@@ -3,7 +3,12 @@ module.exports = function () {
 
 	return {
 		protocol: 'https',
-		hostname: 'www.google.com',
-		port: 80
+		hostname: 'www.youtube.com',
+		port: 443,
+		headers: {
+			Host: 'www.youtube.com',
+			Accept: 'text/html',
+			'User-Agent': 'Mozillla'
+		}
 	};
 };

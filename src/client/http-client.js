@@ -38,7 +38,7 @@ module.exports = (function () {
 			client = https;
 		}
 
-		console.log({
+		console.log({	
 			hostname: options.hostname || 'localhost',
 			port: options.port || 8000,
 			method: options.method || 'GET',
